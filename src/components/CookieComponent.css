@@ -1,0 +1,26 @@
+/* CookieComponent.css */
+.cookie-container {
+    position: fixed;
+    bottom: 80px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cookie-title {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.cookie-text {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.cookie-close-text {
+    color: #FFE400;
+    cursor: pointer;
+    font-weight: bold;
+}

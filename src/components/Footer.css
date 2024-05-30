@@ -1,0 +1,98 @@
+/* Footer.css */
+.footer {
+    color: #333;
+    padding: 20px 0;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(../img/inverted-bg-black.jpg);
+}
+
+.container-footer {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-top {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-contact .catch-phrase {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.form-group{
+    text-transform: none;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.footer-contact-link .button {
+    background-color: black;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    padding: 20px 20px;
+    border-radius: 45px;
+    transition: background-color 0.3s ease;
+}
+
+.footer-contact-link .button:hover {
+    background-color: #333;
+}
+.row{
+    display: flex;
+    flex: 1;
+}
+
+.footer-bottom {
+    margin-top: 80px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    border-top: 1px solid black;
+}
+.footer-left{
+    flex: 1;
+    align-items: flex-start;
+}
+.footer-bottom-right{
+    flex: 1;
+    text-align: right;
+}
+
+.footer-bottom-left p,
+.footer-bottom-right ul {
+    margin: 5px 0;
+    font-size: 0.8rem;
+}
+
+.footer-bottom-left a,
+.footer-bottom-right a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer-bottom-left a:hover,
+.footer-bottom-right a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom-left strong,
+.footer-bottom-right li a {
+    font-weight: bold;
+}
+
+.ul-social-media {
+    list-style: none;
+    padding: 0;
+}
+
+.ul-social-media li {
+    display: inline;
+    margin-right: 10px;
+}

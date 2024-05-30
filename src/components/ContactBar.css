@@ -1,0 +1,12 @@
+.contact-bar {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    height: auto;
+    z-index: 1000;
+}
+
+.contact-container{
+    cursor: pointer;
+}

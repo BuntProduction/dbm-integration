@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: transparent;
+    color: white;
+    transition: background-color 0.6s ease;
+    z-index: 1000;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    font-size: 0.9375rem;
+    letter-spacing: 1px;
+    height: 80px;
+}
+
+.header.scrolled {
+    background-color: none;
+}
+
+.header.menu-open {
+    background-color: white;
+    color: black;
+}
+
+.header .logo img {
+    position: absolute;
+    margin-left: 3vw;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    padding: 0;
+    height: 29px;
+}
+
+.header .navigation {
+    display: flex;
+    gap: 20px;
+}
+
+.header .navigation.hidden {
+    display: none;
+}
+
+.header .navigation a {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    padding: 10px;
+    overflow: hidden;
+    transition: color 0.3s ease;
+}
+
+.header .navigation a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.5s ease-out;
+}
+
+.header .navigation a:hover::before {
+    width: 20%;
+    transition: width 0.5s ease-out;
+}
+
+.header .menu-icon {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+}
+
+.burger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.burger-icon span {
+    display: block;
+    width: 22px;
+    height: 0.1rem;
+    background-color: white;
+    transition: all 0.3s;
+}
+
+.burger-icon .small {
+    width: 15px;
+}
+
+.header.menu-open .burger-icon span {
+    background-color: black;
+}
+
+.header.menu-open .menu-icon p {
+    color: black;
+}
+
+.header.scrolled .burger-icon span {
+    background-color: #ccc;
+}
+
+
+.mobile-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.6s ease, visibility 0.6s ease 0.6s;
+  }
+  
+  .mobile-menu.open {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.6s ease, visibility 0s ease;
+  }
+  
+  .mobile-menu a {
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.125rem;
+    text-align: left;
+    color: #000;
+  }
+  
+  
+
+
+  @media (max-width : 748px){
+    .header .logo img {
+        position: absolute;
+        top: 50%;
+        left: 47.5%;
+        transform: translate(-50%, -50%);
+        height: 27px;
+      }
+      
+
+    .burger-icon {
+        position: absolute;
+        left: 5%;
+    }
+
+  }
+  
+  /*realisations page*/
+
+  .navigation.black-text a {
+    color: black;
+  }
+
+  .burger-icon.white-text .small,
+.burger-icon.white-text span {
+  background-color: black;
+}
+.black-text {
+    color: black;
+  }
+  
+
+  

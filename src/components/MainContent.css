@@ -1,0 +1,38 @@
+.main-content {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    width: 90%;
+    height: 90%;
+    background-image: url('../img/my-bg-modified.png');
+    background-size: cover;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    font-size: 5.2rem;
+    line-height: 1.141;
+    font-weight: 900;
+    letter-spacing: .13125rem;
+    font-weight: bold;
+    text-align: left;
+    max-width: 70%;
+}
+
+@media (max-width: 748px) {
+    .title{
+        font-size: 2.2rem;
+    }
+    
+}

@@ -1,0 +1,42 @@
+.contact-page {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 80px;
+    height: 90vh;
+}
+
+.contact-info {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.contact-info h2 {
+    color: #ffffff;
+}
+
+.cv-download-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #FFE400;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #000000;
+    font-weight: 700;
+}
+
+.cv-download-link:hover {
+    background-color: #000000;
+    color: white;
+}
+
+.contact-info a{
+    text-decoration: none;
+}
+.link-contact{
+    color: white;
+}
