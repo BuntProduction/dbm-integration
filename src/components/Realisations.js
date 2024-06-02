@@ -4,11 +4,11 @@ import { useInView } from 'react-intersection-observer';
 import CreativeWebsite from '../img-portfolio/creative-website.png';
 import FigmaApp from '../img-portfolio/figma-app.png';
 import OldPortfolio from '../img-portfolio/old-portfolio.png';
-import Todo from '../img-portfolio/todo-website.png';
 import Skin from '../img-portfolio/skintrackmania.jpg';
 import Game from '../img-portfolio/screenRetroWave.jpg';
 import Tmchampions from '../img-portfolio/tmchampions.png';
 import Geek from '../img-portfolio/geeknomad.png';
+import Gallery from '../img-portfolio/gallery.png';
 
 const Project = ({ project }) => {
     const { ref: projectRef, inView: projectInView } = useInView({
@@ -42,10 +42,10 @@ const Project = ({ project }) => {
 
 const Realisations = () => {
   const projects = [
-    { id: 1, imgSrc:CreativeWebsite, title:"Creative Website (wip) - HTML/CSS/JS", text: "Création d'un site web créatif (wip seulement sur pc pour l'instant)", link: "https://wip.buntproduction.online/" },
-    { id: 2, imgSrc:FigmaApp, title:"Design d'application - Figma", text: "Design de l'app pour l'entreprise Pink Mobility", link: "/static/media/figma-app.e11cdead5c9f2df8fcd5.png" },
-    { id: 3, imgSrc:OldPortfolio, title:"Ancien portfolio - HTML/CSS/JS",text: "Mon ancien portfolio qui me présentait au travers d'un moteur de recherche", link: "https://buntproduction.github.io/" },
-    { id: 4, imgSrc:Todo, title:"Todolist - ReactJs",text: "Petit projet de todolist avec lien de sharing", link: "https://app.geeknomad.fr/" },
+    { id: 1, imgSrc:Gallery, title:"Galerie d'art (wip) - ReactJs", text: "Site web d'une galerie d'art (wip)", link: "https://gallery.buntproduction.online/" },
+    { id: 2, imgSrc:CreativeWebsite, title:"Creative Website (wip) - HTML/CSS/JS", text: "Création d'un site web créatif (wip seulement sur pc pour l'instant)", link: "https://wip.buntproduction.online/" },
+    { id: 3, imgSrc:FigmaApp, title:"Design d'application - Figma", text: "Design de l'app pour l'entreprise Pink Mobility", link: "/static/media/figma-app.e11cdead5c9f2df8fcd5.png" },
+    { id: 4, imgSrc:OldPortfolio, title:"Ancien portfolio - HTML/CSS/JS",text: "Mon ancien portfolio qui me présentait au travers d'un moteur de recherche", link: "https://buntproduction.github.io/" },
     { id: 5, imgSrc:Skin, title:"Skin Trackmania - Adobe Substance Painter",text: "Skins réalisés pour le jeu Trackmania", link: "/static/media/skintrackmania.71aafd56602d9ab348fe.jpg" },
     { id: 6, imgSrc:Game, title:"Jeu mobile Android - C#",text: "Jeu vidéo sur mobile", link: "https://github.com/BuntProduction/RetroWaveEndlessRunner" },
     { id: 7, imgSrc:Tmchampions, title:"Site web de classement - ReactJs",text: "Site récupérant des classements via des API en rapport avec Trackmania (wip)", link: "https://tm-champions.com/" },
